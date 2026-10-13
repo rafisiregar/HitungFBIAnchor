@@ -51,6 +51,8 @@
   code{background:#eef1f6;padding:1px 5px;border-radius:4px;font-size:12px}
   details summary{cursor:pointer;font-weight:600;font-size:13px;color:var(--brand)}
   .neg{color:var(--bad)}
+  .tpl{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--brand);font-size:12px;font-weight:600;text-decoration:none}
+  .tpl:hover{background:var(--chip);border-color:var(--brand)}
 </style>
 </head>
 <body>
@@ -69,6 +71,7 @@
         <div>Klik atau tarik file ke sini</div>
         <div class="note">Format seperti sheet <code>mentah</code> — header di baris 2, baris 1 berisi nama bulan</div>
       </div>
+      <a class="tpl" href="template/CONTOH_RAW_DATA_INPUT.xlsx" download="CONTOH_RAW_DATA_INPUT.xlsx" title="Unduh contoh format raw data">⬇ Unduh template: <code>CONTOH_RAW_DATA_INPUT.xlsx</code></a>
       <div id="rawStatus"></div>
       <label>Sheet yang dipakai</label>
       <select id="rawSheet" disabled></select>
@@ -88,9 +91,10 @@
         <div class="drop" id="dropMaster" style="margin-top:10px">
           <input type="file" id="fileMaster" accept=".xlsx,.xls,.xlsb,.csv">
           <div>Klik atau tarik file master ke sini</div>
-          <div class="note">Sheet <code>MDR DAN NETT</code> — header baris 2 (TID, MID, ..., MDR On Us, ..., ITC VISA, ..., DEBIT, QRIS)</div>
+          <div class="note">Sheet <code>MDR DAN NETT</code> (atau sheet pertama) — header baris 2 (TID, MID, ..., MDR On Us, ..., ITC VISA, ..., DEBIT, QRIS)</div>
         </div>
       </div>
+      <a class="tpl" href="template/FORMAT_MDR.xlsx" download="FORMAT_MDR.xlsx" title="Unduh format master MDR & pengali nett">⬇ Unduh template: <code>FORMAT_MDR.xlsx</code></a>
       <div id="masterStatus"></div>
       <div class="actions" style="margin-top:10px">
         <button class="btn-ghost" id="btnSaveMaster" disabled>Simpan master ini di browser</button>

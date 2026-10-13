@@ -12,6 +12,10 @@ js/config.js                 SEMUA aturan yang bisa diubah (mapping kategori, ku
 js/fbi.js                    Logika hitung murni (dipakai index.html & unit test)
 js/xlsx.full.min.js          SheetJS (offline)
 python/fbi_calc.py           Versi Python: objek FBICalculator + CLI, konfigurasi sama dengan config.js
+template/CONTOH_RAW_DATA_INPUT.xlsx            Template raw data — bisa di-download dari index.html (langkah 1)
+template/FORMAT_MDR.xlsx                       Template master MDR & pengali nett — bisa di-download dari index.html (langkah 2)
+template/CONTOH_RAW_DATA_INPUT.xlsx           Template raw — bisa diunduh user dari tombol di index.html
+template/FORMAT_MDR.xlsx                       Template master MDR & nett — bisa diunduh user dari tombol di index.html
 contoh/RAW_mentah_JUNI_26.xlsx                 Contoh raw (sheet "mentah")
 contoh/MASTER_MDR_DAN_NETT_dummy.xlsx          Contoh master (sheet "MDR DAN NETT") — rate dummy untuk 6 dari 7 TID contoh
 contoh/CONTOH_FBI_JUNI_26_hasil_7kolom.xlsx    Hasil hitung contoh (3 sheet: HASIL PERHITUNGAN, REKAP, PARAMETER)
